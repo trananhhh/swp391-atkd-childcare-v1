@@ -16,7 +16,7 @@
 </head>
 
 <header>
-    <ul id="myMenu" class="left-side">
+    <div id="myMenu" class="left-side">
         <a href="#welcome" class="header-logo">
             <img src="./assets/image/logo.png" alt="">
         </a>
@@ -25,7 +25,7 @@
         <a href="#section-3" class="navigation-links">Vision & Mission</a>
         <a href="#section-4" class="navigation-links">What we do</a>
         <a href="#feedback" class="navigation-links">Parents's feedback</a>
-    </ul>
+    </div>
     <div class="right-side">
         <a href="#" class="login-btns btn-highlight">Register</a>
         <a href="#" class="login-btns">Login</a>
@@ -190,6 +190,13 @@
         });
     </script>
     <script>
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const currentSection = urlParams.get('#')
+        console.log(currentSection);
+
+
         $(document).ready(function () {
             $("a").on('click', function (event) {
                 if (this.hash !== "") {

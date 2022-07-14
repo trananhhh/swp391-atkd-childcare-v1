@@ -380,3 +380,131 @@ button {
     color: white !important;
     margin-right: 8px;
 }
+
+@media only screen and (max-width: 1060px) {
+    .header-logo img {
+        max-width: 100% !important;
+    }
+
+    .title-container {
+        margin: 0 !important;
+    }
+
+    .title-container p {
+        font-size: 18px !important;
+    }
+
+    h1 {
+        font-size: 72px !important;
+    }
+
+    .navigation-links {
+        display: none;
+    }
+    .sub-text {
+        flex-direction: column;
+    }
+
+    p {
+        width: 100% !important;
+        margin-bottom: 28px;
+        font-size: 16px !important;
+    }
+
+    .section-custom {
+        flex-direction: column;
+        padding: 0 48px;
+        padding-top: 80px;
+        /* justify-content: space-evenly; */
+    }
+
+    .section-text-img .text-container {
+        width: 100%;
+        text-align: center;
+    }
+    img {
+        max-width: 80% !important;
+        width: 100% !important;
+        margin-bottom: 18px;
+    }
+
+    .small-block-3,
+    .small-block-2 {
+        max-height: 30%;
+        width: 100%;
+        margin-bottom: 18px;
+        padding: 24px;
+        overflow: hidden;
+    }
+
+    .small-block-2 {
+        max-height: 36%;
+        padding: 24px;
+    }
+    h2 {
+        font-size: 32px !important;
+    }
+
+    .text-container {
+        padding: 24px !important;
+    }
+
+    .small-block-3 p {
+        font-size: 14px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    footer {
+        font-size: 12px !important;
+    }
+    #about-us {
+        font-size: 24lpx !important;
+        padding: 0 64px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .right-side {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 36px !important;
+    }
+
+    .section-custom {
+        padding: 0 20px;
+        padding-top: 80px;
+    }
+
+    #about-us {
+        padding-top: 80px;
+    }
+
+    p {
+        font-size: 14px !important;
+    }
+
+    img {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin-bottom: 18px;
+    }
+
+    .small-block {
+        overflow: scroll;
+    }
+
+    .small-block-3 p {
+        text-overflow: ellipsis;
+    }
+    .small-block-3 {
+        height: 28% !important;
+        overflow: hidden;
+        padding: 20px 16px;
+    }
+}
