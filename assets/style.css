@@ -9,6 +9,9 @@
     /* font-size: 24px; */
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
 :root {
     --purple: #90a1f8;
     --light-purple: #eef1ff;
@@ -28,6 +31,21 @@ h2 span {
 h5 span {
     color: var(--purple);
 }
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
 .button-9 {
     appearance: button;
     backface-visibility: hidden;
@@ -115,18 +133,11 @@ h5 span {
     color: rgba(0, 0, 0, 0.65);
     transform: translateY(0);
 }
-
-body {
-    /* padding-top: 60px; */
-}
-
 header {
-    /* margin-top: -60px; */
     font-family: 'Caveat Brush', cursive;
     z-index: 1;
     position: fixed;
     height: 68px;
-    /* background-color: var(--purple); */
     background-color: white;
     display: flex;
     align-items: center;
@@ -136,10 +147,30 @@ header {
     border-radius: 0px 0px 15px 15px;
 }
 
+.left-side {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-links:hover {
+    color: var(--purple2);
+}
+.navigation-links {
+    font-size: 20px;
+    margin-left: 28px;
+    font-weight: 600;
+    color: var(--purple);
+}
+
+.header-logo:hover {
+    opacity: 1;
+}
 .header-logo {
     height: 40px;
     object-fit: cover;
     user-select: none;
+    display: block;
+    border: none;
 }
 
 .header-logo img {
@@ -147,7 +178,7 @@ header {
     user-select: none;
 }
 
-header a {
+header .login-btns {
     text-decoration: none;
     color: var(--purple);
     background-color: white;
@@ -157,7 +188,7 @@ header a {
     border: 1px dashed var(--purple);
 }
 
-header a:hover {
+header .login-btns:hover {
     background-color: var(--light-purple);
 }
 
@@ -180,7 +211,7 @@ header a:hover {
     font-size: 20px;
 }
 .section-custom h2 {
-    font-size: 56px;
+    font-size: 48px;
 }
 
 #welcome {
@@ -291,9 +322,11 @@ header a:hover {
     background-color: white;
     padding: 32px;
     margin: 0px 16px;
+    height: 315px;
 }
 .small-block-3 {
     width: 33%;
+    height: 515px;
 }
 .small-block-2 h1 {
     font-size: 100px;
@@ -340,10 +373,10 @@ button {
 
 .btn-highlight:hover {
     opacity: 0.7;
-    background-color: var(--purple);
+    background-color: var(--purple) !important;
 }
 .btn-highlight {
-    background-color: var(--purple);
-    color: white;
+    background-color: var(--purple) !important;
+    color: white !important;
     margin-right: 8px;
 }
